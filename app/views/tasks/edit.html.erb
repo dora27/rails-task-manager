@@ -8,5 +8,16 @@
   <%= f.submit %>
 <% end %>
 
-
 <%= render 'form' %>
+
+<!-- form sction="<%= update_task_path(@task) %>" method="post"
+  <%= hidden_field_tag : authenticity token, form_authenticity_token %><input type="hidden" name="method" value="patch" />
+  <label type="name">name: </label>
+  <input type="text" name=task[name] id="name" value="<%= @task.name %>
+  <label type="content">content: </label>
+  <input type="text" name=task[content] id="content" value="<%= @task.content %>
+  <label type="status">status: </label>
+  <input type="text" name=task[status] id="status" value="<%= @task.status %>
+  <input type="submit">
+<form>
+ -->
